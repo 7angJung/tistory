@@ -1,7 +1,13 @@
 
-# JUPETER Notebook's Tech Blog 👋
+# Hi there 👋
 
-주피터 CS, 개발일지, 이모저모 개발 블로그
+백엔드 개발자를 준비하고 있는 정광혁입니다.
+
+## Tech Stack
+- Java
+- Spring Boot
+- JUnit5
+- Git / GitHub
 
 ## Latest Blog Posts
 
