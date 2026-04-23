@@ -1,22 +1,16 @@
 import { writeFileSync } from "node:fs";
 import Parser from "rss-parser";
 
-// ----- [1] 고정 영역: 네 GitHub 프로필/소개용으로 자유롭게 수정 -----
+// ----- [1] 고정 영역 -----
 const staticContent = `
-# Hi there 👋
+# JUPETER Notebook's Tech Blog 👋
 
-백엔드 개발자를 준비하고 있는 정광혁입니다.
-
-## Tech Stack
-- Java
-- Spring Boot
-- JUnit5
-- Git / GitHub
+주피터 CS, 개발일지, 이모저모 개발 블로그
 
 ## Latest Blog Posts
 `;
 
-// ----- [2] 자동 갱신 영역: 티스토리 RSS 읽어서 최신 글 목록 추가 -----
+// ----- [2] 자동 갱신 영역 -----
 const parser = new Parser({
   headers: {
     Accept: "application/rss+xml, application/xml, text/xml; q=0.1",
@@ -27,7 +21,6 @@ const parser = new Parser({
   let blogSection = "";
 
   try {
-    // 여기에 네 티스토리 RSS 주소 넣기
     const feed = await parser.parseURL("https://jupeternotebook.tistory.com/rss");
 
     const latestPostsCount = 5;
