@@ -1,0 +1,34 @@
+name: Readme Update
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Update README
+        run: npm start
+
+      - name: Commit README
+        run: |
+          git add README.md
+          git config --local user.email "peterj0117@naver.com"
+          git config --local user.name "7angJung"
+          git diff --cached --quiet || git commit -m "Update README.md"
+          git push
