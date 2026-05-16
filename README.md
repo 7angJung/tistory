@@ -5,8 +5,8 @@
 
 ## Latest Blog Posts
 
+- [Git &amp; GitHub](https://jupeternotebook.tistory.com/19)
 - [Java의 메모리 관리](https://jupeternotebook.tistory.com/18)
 - [컴퓨터 언어 정리](https://jupeternotebook.tistory.com/17)
 - [Java 기초 정리](https://jupeternotebook.tistory.com/16)
 - [프로그래머스 - H Index (Java)](https://jupeternotebook.tistory.com/15)
-- [프로그래머스 - K번째 수 (JAVA)](https://jupeternotebook.tistory.com/14)
